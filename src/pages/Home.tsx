@@ -9,12 +9,12 @@ function Home() {
           {/* LEFT */}
           <div>
             <h1 className="text-5xl font-extrabold leading-tight">
-              Crispy Lechon Manok <br />& Juicy Grilled Liempo 🍗
+              Crispy Lechon Manok 🍗
             </h1>
 
             <p className="mt-6 text-lg text-orange-100">
-              Sarap na babalik-balikan! Freshly grilled lechon manok at smoky
-              liempo inspired by your favorite Filipino roast house.
+              Don C. style roasted chicken — juicy, smoky, at sobrang sarap!
+              Freshly grilled araw-araw.
             </p>
 
             <div className="mt-8 flex gap-4">
@@ -50,31 +50,25 @@ function Home() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-xl shadow-md p-6 text-center">
             <div className="text-5xl mb-4">🍗</div>
-
             <h3 className="text-xl font-bold mb-2">Freshly Roasted</h3>
-
             <p className="text-gray-600">
-              Araw-araw bagong luto para siguradong juicy at malasa.
+              Laging bagong luto para juicy at malasa.
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-md p-6 text-center">
             <div className="text-5xl mb-4">🔥</div>
-
-            <h3 className="text-xl font-bold mb-2">Smoky Grilled Liempo</h3>
-
+            <h3 className="text-xl font-bold mb-2">Smoky Flavor</h3>
             <p className="text-gray-600">
-              Perfect grilled flavor na bagay sa kanin at barkada.
+              Perfect roasted taste na babalik-balikan.
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-md p-6 text-center">
             <div className="text-5xl mb-4">🚚</div>
-
             <h3 className="text-xl font-bold mb-2">Fast Delivery</h3>
-
             <p className="text-gray-600">
-              Mainit-init na pagkain delivered diretso sa bahay mo.
+              Mainit na pagkain diretso sa bahay mo.
             </p>
           </div>
         </div>
@@ -84,15 +78,15 @@ function Home() {
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Best Sellers ⭐
+            Don C. Lechon Manokan ⭐
           </h2>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* CARD */}
+            {/* CARD 1 */}
             <div className="bg-orange-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
               <img
                 src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=60"
-                alt="Lechon Manok"
+                alt="Classic Lechon Manok"
                 className="w-full h-56 object-cover"
               />
 
@@ -102,39 +96,39 @@ function Home() {
                 </h3>
 
                 <p className="text-gray-600 mt-2">
-                  Crispy outside, juicy inside.
+                  Juicy, crispy roasted chicken.
                 </p>
 
                 <p className="text-orange-600 font-bold text-2xl mt-4">₱380</p>
               </div>
             </div>
 
-            {/* CARD */}
+            {/* CARD 2 */}
             <div className="bg-orange-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
               <img
-                src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=60"
-                alt="Liempo"
+                src="https://images.unsplash.com/photo-1625944525533-473fbbda5c16?auto=format&fit=crop&w=800&q=60"
+                alt="Garlic Lechon Manok"
                 className="w-full h-56 object-cover"
               />
 
               <div className="p-5">
                 <h3 className="text-xl font-bold text-gray-800">
-                  Smoky Grilled Liempo
+                  Garlic Lechon Manok
                 </h3>
 
                 <p className="text-gray-600 mt-2">
-                  Tender pork belly with smoky flavor.
+                  Rich garlic flavor, tender meat.
                 </p>
 
-                <p className="text-orange-600 font-bold text-2xl mt-4">₱350</p>
+                <p className="text-orange-600 font-bold text-2xl mt-4">₱400</p>
               </div>
             </div>
 
-            {/* CARD */}
+            {/* CARD 3 */}
             <div className="bg-orange-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
               <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=60"
-                alt="Spicy Chicken"
+                src="https://images.unsplash.com/photo-1625944525630-7b6c8d6c0f7e?auto=format&fit=crop&w=800&q=60"
+                alt="Spicy Lechon Manok"
                 className="w-full h-56 object-cover"
               />
 
@@ -144,7 +138,7 @@ function Home() {
                 </h3>
 
                 <p className="text-gray-600 mt-2">
-                  Perfect para sa mahilig sa anghang.
+                  May tamang anghang na babalik-balikan.
                 </p>
 
                 <p className="text-orange-600 font-bold text-2xl mt-4">₱400</p>
