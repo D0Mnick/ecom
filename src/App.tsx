@@ -8,31 +8,34 @@ import Cart from "./pages/Cart";
 import Shop from "./pages/Shop";
 import Home from "./pages/Home";
 
-type Product = {
-  id: string | number;
-  name: string;
-  price: number;
-  image?: string;
-};
+import type { Product } from "./types";
 
 function App() {
   const [cart, setCart] = useState<Product[]>([]);
 
-  // ✅ safer state update
+  // ✅ Add product to cart
   const addToCart = (product: Product) => {
     setCart((prev) => [...prev, product]);
   };
 
+  // ✅ Remove product from cart
+  const removeFromCart = (id: string | number) => {
+    setCart((prev) => prev.filter((item) => item.id !== id));
+  };
+
   return (
     <BrowserRouter>
-      {/* 🔥 PASS CART COUNT TO NAVBAR */}
       <Navbar cartCount={cart.length} />
 
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/shop" element={<Shop addToCart={addToCart} />} />
 
-        <Route path="/cart" element={<Cart cart={cart} />} />
+        <Route
+          path="/cart"
+          element={<Cart cart={cart} removeFromCart={removeFromCart} />}
+        />
 
         <Route path="/checkout" element={<Checkout cart={cart} />} />
       </Routes>
